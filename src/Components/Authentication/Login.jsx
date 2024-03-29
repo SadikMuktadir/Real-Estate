@@ -1,5 +1,29 @@
+import { useContext } from "react";
 import imageFile from "../../assets/undraw_Mobile_login_re_9ntv (1).png";
+import { AuthContext } from "./AuthProvider";
+import { useNavigate } from "react-router-dom";
 const Login = () => {
+  const navigate = useNavigate();
+  const { signInUser } = useContext(AuthContext);
+  const handleSignForm = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    const inputData = { email, password };
+    console.log(inputData);
+
+    // firebase create user
+    signInUser(email, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        console.log(user);
+        navigate("/");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <div>
       <div className="hero min-h-screen">
@@ -8,14 +32,15 @@ const Login = () => {
             <img src={imageFile} alt="" />
           </div>
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <form className="card-body">
+            <form onSubmit={handleSignForm} className="card-body">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
                 </label>
                 <input
+                  name="email"
                   type="email"
-                  placeholder="email"
+                  placeholder="type your email"
                   className="input input-bordered"
                   required
                 />
@@ -25,8 +50,9 @@ const Login = () => {
                   <span className="label-text">Password</span>
                 </label>
                 <input
+                  name="password"
                   type="password"
-                  placeholder="password"
+                  placeholder="enter strong password"
                   className="input input-bordered"
                   required
                 />
@@ -37,9 +63,11 @@ const Login = () => {
                 </label>
               </div>
               <div className="form-control mt-6">
-                <div className="px-6 py-3 btn btn-outline bg-[#1C3988] text-white font-bold">
-                  <input type="button" value="Login" />
-                </div>
+                <input
+                  className="px-6 py-3 btn btn-outline bg-[#1C3988] text-white font-bold"
+                  type="submit"
+                  value="Login"
+                />
               </div>
             </form>
           </div>
