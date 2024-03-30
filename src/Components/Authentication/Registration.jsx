@@ -1,7 +1,9 @@
 import { useContext } from "react";
 import imageFile from "../../assets/undraw_Fingerprint_login_re_t71l.png";
 import { AuthContext } from "./AuthProvider";
+import { useNavigate } from "react-router-dom";
 const Registration = () => {
+  const navigate = useNavigate();
   const { createUser } = useContext(AuthContext);
   const handleForm = (e) => {
     e.preventDefault();
@@ -18,6 +20,7 @@ const Registration = () => {
       .then((userCredential) => {
         const user = userCredential.user;
         console.log(user);
+        navigate("/");
       })
       .catch((error) => {
         console.log(error);

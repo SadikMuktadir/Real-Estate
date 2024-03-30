@@ -1,6 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
 import imageLogo from "../../assets/Vector.png";
+import { useContext } from "react";
+import { AuthContext } from "../Authentication/AuthProvider";
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogout = () => {
+    logOut();
+  };
   return (
     <div>
       <div className="navbar bg-base-100">
@@ -82,12 +88,23 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <div className="mr-3 px-6 py-3 btn btn-outline bg-[#1C3988] text-white font-bold">
-            <Link to="/login">Login</Link>
-          </div>
-          <div className="px-6 py-3 btn btn-outline bg-[#1C3988] text-white font-bold">
-            <Link to="/registration">Registration</Link>
-          </div>
+          {user ? (
+            <div>
+              <div className="mr-3 px-6 py-3 btn btn-outline bg-[#1C3988] text-white font-bold">
+                <button onClick={handleLogout}>Logout</button>
+              </div>
+              <div>{user.displayName}</div>
+            </div>
+          ) : (
+            <div>
+              <div className="mr-3 px-6 py-3 btn btn-outline bg-[#1C3988] text-white font-bold">
+                <Link to="/login">Login</Link>
+              </div>
+              <div className="px-6 py-3 btn btn-outline bg-[#1C3988] text-white font-bold">
+                <Link to="/registration">Registration</Link>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
