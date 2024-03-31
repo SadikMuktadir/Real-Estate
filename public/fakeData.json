@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/7b2Frvj/vu-anh-Ti-VPTYCG-3-E-unsplash.jpg",
+    "description": "Spacious 3-bedroom apartment with a stunning view of the city skyline. Modern amenities and convenient access to transportation.",
+    "price": 350000,
+    "location": "123 Main Street, Anytown, USA"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/4SnQnpf/todd-kent-178j8t-Jr-Nlc-unsplash.jpg",
+    "description": "Cozy 2-bedroom cottage nestled in a quiet neighborhood. Beautiful garden and close to schools and parks.",
+    "price": 250000,
+    "location": "456 Elm Street, Smallville, USA"
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/D1cDNsp/kara-eads-L7-Ew-Hkq1-B2s-unsplash.jpg",
+    "description": "Luxurious penthouse with panoramic views of the ocean. High-end finishes and exclusive amenities.",
+    "price": 1500000,
+    "location": "789 Ocean Avenue, Beach City, USA"
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/PsLXvfV/pixasquare-4ojhpg-Kp-S68-unsplash.jpg",
+    "description": "Charming 4-bedroom Victorian house with a spacious backyard. Close to shops and restaurants.",
+    "price": 450000,
+    "location": "10 Maple Drive, Suburbia, USA"
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/m6T583n/sieuwert-otterloo-aren8nutd1-Q-unsplash.jpg",
+    "description": "Modern loft-style apartment in a converted warehouse. Open floor plan and industrial-chic design.",
+    "price": 400000,
+    "location": "678 Warehouse Row, Urbanville, USA"
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/fD47dfV/frames-for-your-heart-m-R1-CIDdu-GLc-unsplash.jpg",
+    "description": "Quaint 3-bedroom farmhouse with picturesque views of the countryside. Perfect for nature lovers.",
+    "price": 300000,
+    "location": "90 Country Lane, Rural Town, USA"
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/K961G49/digital-marketing-agency-ntwrk-g39p1k-Djv-SY-unsplash.jpg",
+    "description": "Contemporary townhouse with sleek design and rooftop terrace. Walking distance to shops and cafes.",
+    "price": 500000,
+    "location": "11 Market Street, City Center, USA"
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/K961G49/digital-marketing-agency-ntwrk-g39p1k-Djv-SY-unsplash.jpg",
+    "description": "Historic mansion with elegant architecture and landscaped gardens. Ideal for entertaining.",
+    "price": 2000000,
+    "location": "55 Heritage Boulevard, Historic District, USA"
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/YkQ6YCV/phil-hearing-IYfp2-Ixe9n-M-unsplash.jpg",
+    "description": "Sleek and modern condo in a high-rise building. Spectacular views and luxurious amenities.",
+    "price": 800000,
+    "location": "99 Skyline Avenue, Metropolis, USA"
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co/gd9Mrwj/jacques-bopp-Hh18-POSx5qk-unsplash.jpg",
+    "description": "Rustic log cabin retreat tucked away in the mountains. Cozy fireplace and serene surroundings.",
+    "price": 600000,
+    "location": "12 Mountain View Drive, Alpine Village, USA"
+  }
+]
