@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import Login from "../Authentication/Login";
 import Registration from "../Authentication/Registration";
 import SearchInOffers from "../Pages/SearchInOffers";
+import SeeAll from "../Pages/SeeAll";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/searchInOffers",
         element: <SearchInOffers></SearchInOffers>,
+      },
+      {
+        path: "/seeAll",
+        element: <SeeAll></SeeAll>,
       },
     ],
   },

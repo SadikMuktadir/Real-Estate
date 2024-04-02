@@ -11,7 +11,9 @@ const Card = ({ data }) => {
           <p>{price}</p>
           <p>{location}</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
+            <button className="px-6 py-3 btn btn-outline bg-[#1C3988] text-white font-bold">
+              Buy Now
+            </button>
           </div>
         </div>
       </div>
